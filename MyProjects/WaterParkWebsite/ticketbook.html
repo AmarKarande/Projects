@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Krushnai Water Park | Fun & Adventure</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .navbar {
+        background-color: #f7f7f7;
+        color: #040229;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .navbar-brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: #040229 !important;
+        letter-spacing: 1.5px;
+      }
+      .nav-link {
+        color: #040229 !important;
+        margin: 0 15px;
+        transition: all 0.3s ease;
+      }
+      .nav-link:hover {
+        color: rgb(2, 2, 2) !important;
+        /* transform: scale(1.05); */
+        font-weight: bold;
+        border-bottom: 1px solid #000000;
+      }
+      .hero-section {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("./images/hero-image.jpg") center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+      .hero-title {
+        font-family: "Playfair Display", serif;
+        font-size: 4rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 2rem;
+      }
+      .cta-button {
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid white;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        display: inline-block;
+      }
+      .cta-button:hover {
+        background: #ff9e1d;
+        color: #010101;
+        transform: scale(1.05);
+      }
+      .feature-card {
+        transition: transform 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .feature-card:hover {
+        transform: translateY(-10px);
+      }
+      .section-title {
+        font-family: "Playfair Display", serif;
+        color: #0d47a1;
+        font-size: 40px;
+        margin: 4rem 0;
+      }
+      .tickets {
+        font-family: "Playfair Display", serif;
+        color: #0d47a1;
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      .social-links a {
+        transition: all 0.3s ease; /* Smooth transition */
+      }
+
+      .social-links a:hover {
+        color: #ff0000; /* Change color on hover (you can change this to any color) */
+        transform: scale(1.1); /* Slightly enlarge the icon */
+      }
+      .contact {
+        font-family: "Playfair Display", serif;
+        color: #0d47a1;
+        font-size: 40px;
+        margin-top: 12px;
+      }
+      footer {
+        background: #0d47a1;
+        color: white;
+        padding: 0.5rem 0;
+        margin-top: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">KRUSHNAI WATER PARK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="hero" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rides">Rides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#booking">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-section" id="home">
+      <div class="container text-center">
+        <h1 class="hero-title">Dive into Endless Fun</h1>
+        <!-- <button class="cta-button">Book Tickets Now</button> -->
+        <p>
+          <a class="cta-button" href="#booking">Book Tickets Now</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container text-center py-2 pb-2" id="rides">
+      <h2 class="section-title">
+        Choose Your Thrill – Wet, Wild, or Whimsical
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img
+              src="./images/img_1.jpg"
+              class="card-img-top"
+              alt="Water Slide"
+            />
+            <div class="p-4">
+              <h3>Pirate Island</h3>
+              <p>
+                Experience our adrenaline-pumping water slides of Pirate Island
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="./images/img_2.jpg" class="card-img-top" alt="Dining" />
+            <div class="p-4">
+              <h3>Snake-themed Slide</h3>
+              <p>Slithering to Success: Insights from the World of Snakes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="./images/img_3.jpg" class="card-img-top" alt="Events" />
+            <div class="p-4">
+              <h3>Wave Pool</h3>
+              <p>Ride the Waves: Dive Into the Ultimate Pool Adventure!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="./images/img_4.jpg" class="card-img-top" alt="Events" />
+            <div class="p-4">
+              <h3>Rain Dance</h3>
+              <p>
+                Feel the Rhythm, Embrace the Splash: Rain Dance at the Water
+                Resort!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="./images/img_5.jpg" class="card-img-top" alt="Events" />
+            <div class="p-4">
+              <h3>Float slides</h3>
+              <p>Glide and Slide: Drift into Fun on the Float Slides!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="./images/img_6.jpg" class="card-img-top" alt="Events" />
+            <div class="p-4">
+              <h3>Special Events</h3>
+              <p>Join our exciting weekend events and competitions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Ticket Booking -->
+
+    <div class="container mt-5" id="booking">
+      <div class="card-header text-center tickets">
+        <p>Water Resort Ticket Booking</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <form id="ticketBookingForm">
+                <!-- Ticket Type -->
+                <div class="mb-3">
+                  <label for="ticketType" class="form-label">Ticket Type</label>
+                  <select id="ticketType" class="form-select" required>
+                    <option value="adult">Adult</option>
+                    <option value="child">Child</option>
+                    <option value="senior">Senior</option>
+                  </select>
+                </div>
+                <!-- Number of Tickets -->
+                <div class="mb-3">
+                  <label for="numberOfTickets" class="form-label"
+                    >Number of Tickets</label
+                  >
+                  <input
+                    type="number"
+                    id="numberOfTickets"
+                    class="form-control"
+                    min="1"
+                    value="1"
+                    required
+                  />
+                </div>
+                <!-- Name -->
+                <div class="mb-3">
+                  <label for="visitorName" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    id="visitorName"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="visitorEmail" class="form-label"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="visitorEmail"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">
+                  Book Tickets
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Confirmation Message -->
+          <div id="confirmationMessage" class="alert alert-success mt-3 d-none">
+            <h5 class="alert-heading">Booking Confirmed!</h5>
+            <p>
+              Your booking for <span id="confirmedTickets"></span> tickets has
+              been confirmed!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--  -->
+    <!-- Contact us section -->
+    <section id="contact" class="py-1">
+      <h2 class="text-center mb-5 contact">Contact Us</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="card">
+              <div class="card-body" style="font-size: 27px">
+                <!-- <h5 class="card-title">Visit Us</h5> -->
+                <p class="card-text">
+                  Krushnai Water Park & Resort<br />
+                  Sinhagad Base, 186, Donje Gaon-Sinhagad Rd, <br />
+                  Donaje, Maharashtra 411025 <br />
+                  <i class="fas fa-phone"></i> 09372154617 <br />
+                  <a
+                    href="https://krushnaiwaterworld.com"
+                    target="_blank"
+                    class="text-decoration-none"
+                    >https://krushnaiwaterworld.com
+                  </a>
+                </p>
+                <!-- <a href="./images/Krushnai-Water-Park-OG-Photo.jpg"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #080808; padding: 20px 0">
+      <div class="container text-center">
+        <div class="social-links mb-4">
+          <a
+            href="https://facebook.com"
+            class="text-white mx-3"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            class="text-white mx-3"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            class="text-white mx-3"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+            <!-- Fixed the typo here -->
+          </a>
+        </div>
+        <p>&copy; 2025 Krushnai Water Park. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
